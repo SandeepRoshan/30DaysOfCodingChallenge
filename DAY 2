@@ -1,0 +1,54 @@
+Day 2 of #30dayscodingchallenge #hackerrank 
+
+
+
+I'm glad to share that I started the "30 days coding Challenge". The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+
+
+
+Day 2 practices,
+
+
+
+solve has the following parameters:
+
+=> int meal_cost: the cost of food before tip and tax
+
+=> int tip_percent: the tip percentage
+
+=> int tax_percent: the tax percentage
+
+=> Returns The function returns nothing. Print the calculated value, rounded to the nearest integer.
+
+
+
+ANSWER:_________________________________________________________________________
+
+#!/bin/python3
+
+
+import sys
+
+#
+# Complete the 'solve' function below.
+#
+# The function accepts following parameters:
+#  1. DOUBLE meal_cost
+#  2. INTEGER tip_percent
+#  3. INTEGER tax_percent
+#
+
+if __name__ == '__main__':
+    meal_cost = float(input().strip())
+
+    tip_percent = int(input().strip())
+
+    tax_percent = int(input().strip())
+    tip_amount = meal_cost * tip_percent / 100
+    tax_amount = meal_cost * tax_percent / 100
+    total_cost = round(meal_cost + tip_amount + tax_amount)
+    print(str(total_cost))
+
+
