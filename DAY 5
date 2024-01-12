@@ -1,0 +1,26 @@
+Day 5 of #30dayscodingchallenge #hackerrank
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+Day 5 practices,
+
+solve has the following parameters:
+=> Given an integer.
+=> n print its first 10 multiples.
+=> Each multiple n x i (where 1<= i <= 10) should be printed on a new line
+=> In the form: n x i = result.
+
+ANSWER__________________________________
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    int i;
+    scanf("%d",&n);
+    for(i=1;i<=10;i++)
+    {
+        printf("%d x %d = %d\n",n,i,n*i);
+    }   
+}
