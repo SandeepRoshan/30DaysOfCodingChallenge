@@ -1,0 +1,53 @@
+Day 7 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+
+
+
+Day 7 practices,
+
+
+
+solve has the following parameters.
+
+=> Given an array, A of N integers.
+
+=> print A's elements in reverse order. 
+
+=> a single line of space-separated numbers.
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+GitHub Link: -https://lnkd.in/etTi-Qjb
+
+
+ANSWER______________________________
+
+#!/bin/python3
+
+import sys
+
+
+
+n = int(input().strip())
+arr = [int(arr_temp) for arr_temp in input().strip().split(' ')]
+
+reversed_array = []
+for i in range(n):
+    reversed_array.append(arr[n-i-1])
+    
+print(' '.join(str(i) for i in reversed_array))
+
+
