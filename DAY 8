@@ -1,0 +1,41 @@
+Day 8 of #30dayscodingchallenge #hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+Day 8 practices,
+
+solve has the following parameters.
+=> The first line contains an integer, n, denoting the number of entries in the phone book.
+=> Each of the n subsequent lines describes an entry in the form of 2 space-separated values on a single line. The first value is a friend's name, and the second value is an 8-digit phone number.
+=> After the n lines of phone book entries, there are an unknown number of lines of queries. Each line (query) contains a name  to look up, and you must continue reading lines until there is no more input.
+.
+.
+.
+Suggestions are always welcomed.
+GitHub Link: - https://lnkd.in/etTi-Qjb
+
+ANSWER___________________________________
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n =int(input().strip())
+phonebook = {}
+
+
+for i in range(0, n):
+    name, number = input().strip().split(' ')
+    phonebook[name] = number;
+    
+while True:
+    try:
+        entry = input().strip()
+        if entry in phonebook.keys():
+            print('{}={}'.format(entry, phonebook[entry]))
+        else:
+            print('Not found')
+    except EOFError:
+         break
+            
