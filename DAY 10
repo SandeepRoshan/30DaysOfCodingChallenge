@@ -1,0 +1,52 @@
+Day 10 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+
+
+
+Day 10 practices,
+
+
+
+solve has the following parameters.
+
+=> Given a base-10 integer n, convert it to binary (base-2)
+
+=> Then find and print the base-10 integer denoting the maximum number of consecutive 1's in n's binary representation.
+
+=> When working with different bases, it is common to show the base as a subscript.
+
+
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+ANSWER_____________________________
+
+
+n = int(input().strip())
+
+current_consecutive_1s = 0
+max_consecutive_1s = 0
+while n > 0:
+    remainder = n % 2
+    n = n // 2
+    if remainder == 1:
+        current_consecutive_1s += 1
+        if current_consecutive_1s > max_consecutive_1s:
+            max_consecutive_1s = current_consecutive_1s
+    else:
+        current_consecutive_1s = 0
+
+print(max_consecutive_1s)
