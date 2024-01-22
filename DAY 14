@@ -1,0 +1,33 @@
+Day 14 of hashtag#30dayscodingchallenge hashtag#hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in a effective way.
+
+
+Day 14 practices,
+
+solve has the following parameters.
+=> A class constructor that takes an array of integers as a parameter and saves it to the ___elements instance variable.
+=> A computeDifference method that finds the maximum absolute difference between any 2 numbers in ____elements.
+=> stores it in the maximumDifference instance variable.
+.
+.
+.
+Suggestions are always welcomed.
+
+
+ANSWER___________________
+
+class Difference {
+  	private int[] elements;
+  	public int maximumDifference;
+
+    public Difference(int[] elements){
+        this.elements = elements;
+    }
+
+    public void computeDifference(){
+        Arrays.sort(elements);
+        this.maximumDifference = Math.abs(elements[elements.length - 1] - elements[0]);
+    }
+} // End of Difference class
