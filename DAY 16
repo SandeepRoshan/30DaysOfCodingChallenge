@@ -1,0 +1,55 @@
+Day 16 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 16 practices,
+
+ 
+
+solve has the following parameters.
+
+=> Read a string,S, and print its integer value.
+
+=> if S cannot be converted to an integer, print Bad String.
+
+=> You must use the String-to-Integer and exception handling constructs built into your submission language. If you attempt to use loops/conditional statements, you will get a 0 score.
+
+
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+
+ANSWER__________________________
+
+
+#!/bin/python3
+
+
+import sys
+
+
+t = input()
+try:
+    print(int(t))
+except:
+    print("Bad String")
+
+
+
+
+
+
