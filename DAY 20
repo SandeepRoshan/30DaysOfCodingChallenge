@@ -1,0 +1,37 @@
+Day 20 of hashtag#30dayscodingchallenge hashtag#hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+Day 20 practices,
+ 
+solve has the following parameters.
+=> Array is sorted in numSwaps swaps.
+=> First Element: firstElement.
+=> Last Element: lastElement.
+=> you will need to add a variable that keeps a running tally of all swaps that occur during execution.
+.
+.
+.
+Suggestions are always welcomed.
+
+ANSWER__________________________
+
+def bubble_sort(arr:list) -> int:
+    swap_cnt = 0
+
+    for i in range(len(arr)):
+        for j in range(len(arr)-1):
+            if (arr[j] > arr[j+1]):
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+                swap_cnt += 1
+        
+        if swap_cnt == 0:
+            break
+    return swap_cnt
+
+print('Array is sorted in {swap_cnt} swaps.'.format(swap_cnt=bubble_sort(a)))
+print('First Element: {}'.format(a[0]))
+print('Last Element: {}'.format(a[-1]))
