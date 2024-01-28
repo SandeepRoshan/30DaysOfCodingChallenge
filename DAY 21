@@ -1,0 +1,39 @@
+Day 21 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 21 practices,
+
+ 
+
+solve has the following parameters.
+
+=> Write a single generic function named printArray; this function must take an array of generic elements as a parameter.
+
+=> The locked Solution class in your editor tests your function.
+
+
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+ANSWER____________________________
+
+ public void printArray(T [] array) {
+        for (int i=0; i<array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
