@@ -1,0 +1,47 @@
+Day 17 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 17 practices,
+
+ 
+
+solve has the following parameters.
+
+=> Input from stdin is handled for you by the locked stub code in your editor. The first line contains an integer T.
+
+=> the number of test cases. Each of the T subsequent lines 
+
+=> describes a test case in 2 space-separated integers that denote n and p, respectively.
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+ANSWER____________
+
+//Write your code here
+class Calculator {
+    public int power(int n, int p)
+    {
+       if(n < 0 || p < 0) 
+        {
+           throw new Exception("n and p should be non-negative");
+        }
+        else
+        {
+            return Convert.ToInt32(Math.Pow(n,p));   
+        }
+   }
