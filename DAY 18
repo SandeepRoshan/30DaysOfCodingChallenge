@@ -1,0 +1,56 @@
+Day 18 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 18 practices,
+
+ 
+
+solve has the following parameters.
+
+=> You do not need to read anything from stdin.
+
+=> The locked stub code in your editor reads a single line containing string s.
+
+=> It then calls the methods specified above to pass each character to your instance variables.
+
+
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+ANSWER______________________________
+
+class Solution {
+    //Write your code here
+    Stack<char> stackObj = new Stack<char>();
+    Queue<char> queueObj = new Queue<char>();
+    
+    void pushCharacter(char ch){
+        stackObj.Push(ch);
+    }
+    
+    void enqueueCharacter(char ch){
+        queueObj.Enqueue(ch);
+    }
+    
+    char popCharacter(){
+        return stackObj.Pop();
+    } 
+    
+    char dequeueCharacter(){
+        return queueObj.Dequeue();
+    }
