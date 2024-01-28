@@ -1,0 +1,26 @@
+Day 19 of hashtag#30dayscodingchallenge hashtag#hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+Day 19 practices,
+ 
+solve has the following parameters.
+=> Complete the implementation of Calculator class, which implements the AdvancedArithmetic interface. 
+=> he implementation for the divisorSum(n) method must return the sum of all divisors of n.
+
+.
+.
+.
+Suggestions are always welcomed.
+
+
+ANSWER______________________
+
+
+
+class Calculator(AdvancedArithmetic):
+    def divisorSum(self, n):
+         result = [i for i in range(1, n+1) if n % i == 0]
+         return sum(result)
