@@ -1,0 +1,33 @@
+Day 21 of hashtag#30dayscodingchallenge hashtag#hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+Day 21 practices,
+ 
+solve has the following parameters.
+=> The locked stub code in your editor reads the following inputs and assembles them into a binary search tree
+=> The first line contains an integer n.
+=> Each of the n subsequent lines contains an integer,data, denoting the value of an element that must be added to the BST.
+
+.
+.
+.
+Suggestions are always welcomed.
+
+ANSWER_____________________
+
+static int getHeight(Node root){
+      //Write your code here
+        if( root == null )
+            return -1;
+        else{
+            int lHeight = getHeight(root.left);
+            int rHeight = getHeight(root.right);
+            if( lHeight>rHeight )
+               return lHeight+1;
+            else
+                return rHeight+1;
+        }
+    }
