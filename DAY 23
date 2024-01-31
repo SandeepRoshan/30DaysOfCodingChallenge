@@ -1,0 +1,54 @@
+Day 23 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 23 practices,
+
+ 
+
+solve has the following parameters.
+
+=> The locked stub code in your editor reads the following inputs and assembles them into a BST.
+
+=> The first line contains an integer,T (the number of test cases).
+
+=> The T subsequent lines each contain an integer,data, denoting the value of an element that must be added to the BST.
+
+
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+
+ANSWER_______________________________
+
+
+class Solution{
+
+    static void levelOrder(Node root){
+    //Write your code here
+      Queue<Node> queue = new LinkedList<Node>();
+      queue.add(root);
+      while(queue.peek()!=null)
+          {
+          Node node =queue.remove();
+          System.out.print(""+node.data+" ");
+          if(node.left!=null)
+              queue.add(node.left);
+          if(node.right!=null)
+              queue.add(node.right);
+      }
+  }
