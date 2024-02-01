@@ -1,0 +1,57 @@
+Day 25 of #30dayscodingchallenge #hackerrank
+
+
+
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+
+
+
+Day 25 practices,
+
+ 
+
+solve has the following parameters.
+
+=> A prime is a natural number greater than 1 that has no positive divisors other than 1.
+
+=> Given a number, n, determine and print whether it is Prime or Not Prime.
+
+=> the first line contains an integer,T , the number of test cases.
+
+Each of the T subsequent lines contains an integer, n, to be tested for primality.
+
+.
+
+.
+
+.
+
+Suggestions are always welcomed.
+
+
+ANSWER________________________
+
+def is_prime(n):
+    if n == 1:
+        return False
+    divisor = 2
+    while divisor <= n**0.5:
+        if n % divisor == 0:
+            return False
+        divisor += 1
+
+    return True
+
+
+
+T=int(input())
+for i in range(T):
+    n=int(input())
+    if is_prime(n):
+        print('Prime')
+    else:
+        print('Not prime')
