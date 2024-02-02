@@ -1,0 +1,29 @@
+Day 26 of hashtag#30dayscodingchallenge hashtag#hackerrank
+
+
+The 30 Days Challenge is a highly effective way to learn problem solving skills and it will help me to develop my coding knowledge in an effective way.
+
+
+Day 26 practices,
+ 
+solve has the following parameters.
+=> The first line contains 3 space-separated integers denoting the respective day,month, and year on which the book was actually returned.
+=> The second line contains 3 space-separated integers denoting the respective day,month, and year on which the book was expected to be returned (due date).
+.
+.
+.
+Suggestions are always welcomed.
+
+ANSWER_____________________
+
+if int(y_e) > int(y_a): res = 0
+
+elif int(y_e) < int(y_a): res = 10000
+
+elif int(m_e) > int(m_a): res = 0
+
+elif int(m_e) < int(m_a): res = 500 * (int(m_a) - int(m_e))
+
+elif int(d_e) < int(d_a): res = 15 * (int(d_a) - int(d_e))
+
+print(res) 
